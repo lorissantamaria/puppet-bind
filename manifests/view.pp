@@ -30,4 +30,5 @@ define bind::view (
         target  => "${::bind::confdir}/view-mappings.txt",
         content => template('bind/view-mappings.erb'),
     }
+    create_resources('bind::view', $bind_views)
 }
