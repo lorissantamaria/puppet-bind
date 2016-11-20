@@ -2,6 +2,10 @@
 
 [![Build Status](https://secure.travis-ci.org/inkblot/puppet-bind.png)](http://travis-ci.org/inkblot/puppet-bind)
 
+**Fork Notice:** This is just a small fork on inkblot's puppet-bind module. In
+this fork I've added some stuff like create_resources to better integrate this class 
+in Foreman and some additional bind parameters I need in my day to day work
+
 **IMPORTANT UPGRADE INFORMATION:** In version 6.0.0 of this module there are
 significant changes to the handling of default zones that may require
 preparations prior to upgrading. See [DEFAULT_ZONES.md](DEFAULT_ZONES.md) for
