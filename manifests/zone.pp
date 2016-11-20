@@ -165,4 +165,6 @@ define bind::zone (
         target  => "${::bind::confdir}/domain-mappings.txt",
         content => "${name}:${_domain}\n",
     }
+
+    create_resources('bind::zone', $bind_zones)
 }
