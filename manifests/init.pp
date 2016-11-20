@@ -9,6 +9,7 @@ class bind (
     $statistics_port       = undef,
     $auth_nxdomain         = undef,
     $include_default_zones = true,
+    $disable_empty_zones   = undef,
     $include_local         = false,
 ) inherits bind::defaults {
 
