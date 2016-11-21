@@ -26,7 +26,7 @@ options {
 <%- end -%>
 <%- if @disable_empty_zones and @disable_empty_zones != '' -%>
 <%-   Array(@disable_empty_zones).each do |disable_empty_zone| -%>
-		disable-empty-zone "<%= disable_empty_zone %>";
+	disable-empty-zone "<%= disable_empty_zone %>";
 <%-   end -%>
 <%- end -%>
 	auth-nxdomain <%= @auth_nxdomain ? 'yes' : 'no' %>;
