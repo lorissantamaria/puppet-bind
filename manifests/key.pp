@@ -49,5 +49,4 @@ define bind::key (
             content => "include \"${keydir}/${key_file_name}\";\n",
         }
     }
-    create_resources('bind::key', $bind_keys)
 }

@@ -11,6 +11,10 @@ class bind (
     $include_default_zones = true,
     $disable_empty_zones   = undef,
     $include_local         = false,
+    $bind_keys             = {},
+    $bind_trustedkeys      = {},
+    $bind_views            = {},
+    $bind_zones            = {},
 ) inherits bind::defaults {
 
     File {
@@ -114,4 +118,8 @@ class bind (
         hasrestart => true,
         hasstatus  => true,
     }
+    create_resources('bind::key', $bind_keys)
+    create_resources('bind::trustedkey', $bind_trustedkeys)
+    create_resources('bind::view', $bind_views)
+    create_resources('bind::zone', $bind_zones)
 }
