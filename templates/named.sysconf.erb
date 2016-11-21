@@ -1,0 +1,5 @@
+# This file is managed by puppet - changes will be lost
+<%- if @bind_resolvconf and @bind_resolvconf != '' -%>
+RESOLVCONF="<%= @bind_resolvconf %>"
+<%- end -%>
+OPTIONS="<%= @bind_options %>"

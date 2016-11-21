@@ -68,6 +68,10 @@ class bind (
     file { $namedconf:
         content => template('bind/named.conf.erb'),
     }
+    
+    file { $bind_sysconf:
+        content => template('bind/named.sysconf.erb'),
+    }
 
     if $include_default_zones and $default_zones_source {
         file { $default_zones_include:
