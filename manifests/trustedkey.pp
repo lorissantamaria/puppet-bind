@@ -23,7 +23,7 @@ define bind::trustedkey (
         group   => $group,
         mode    => '0640',
         replace => $replace,
-        content => template('bind/trusted-key.conf.erb'),
+        content => template('bind/trusted-keys.conf.erb'),
     }
 
     if $include and defined(Class['bind']) {
