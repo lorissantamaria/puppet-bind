@@ -15,6 +15,7 @@ class bind (
     $bind_trustedkeys      = {},
     $bind_views            = {},
     $bind_zones            = {},
+    $bind_options          = {},
 ) inherits bind::defaults {
 
     File {
